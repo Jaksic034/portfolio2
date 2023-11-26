@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Luka Jaksic" id="7759BB66-F7C6-7FB1-25B2-CF61773D0803" version="3.5">
-<createdBy>Ucenik-IK4-09</createdBy>
-<createdTime>2023-11-16 09:39:00 UTC</createdTime>
-<ownerDesignName>Luka Jaksic</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>7759BB66-F7C6-7FB1-25B2-CF61773D0803</designId>
-</OSDM_Design>
