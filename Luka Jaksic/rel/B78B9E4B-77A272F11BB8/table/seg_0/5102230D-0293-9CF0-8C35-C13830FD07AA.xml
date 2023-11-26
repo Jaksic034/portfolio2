@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5102230D-0293-9CF0-8C35-C13830FD07AA" name="lj_Arheolog_Antikivtet">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>340B6D52-A8D9-4648-FC5A-05CE483C6D15</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="lj_Antikvitet_id" id="DC684CB0-FB1F-47F6-66A6-36D7C7470580">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>49B66A3C-47AE-D50F-2041-694AA61D11C4</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9CC4F5C-0692-5080-FF8C-89B999430EE3" referredColumn="B19B64CF-D16B-C13E-46BD-FCD692789482"/>
+</associations>
+</Column>
+<Column name="lj_Arheolog_id" id="9335F3A0-EF3A-2594-D5CB-AD2EFB09DEE6">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>7B140E46-A981-88EC-3383-AEE10E54148E</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D26B9834-C953-D2E9-6B02-020F44542054" referredColumn="D26BFB3D-857C-E22D-1442-51C97DE3EB60"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32106041-0B08-0F01-B162-54B9229C9BC1" name="Arheolog_Antikivtet_PK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>7459DDF4-D377-9DB8-69DD-B46196EA87E7</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC684CB0-FB1F-47F6-66A6-36D7C7470580"/>
+<colUsage columnID="9335F3A0-EF3A-2594-D5CB-AD2EFB09DEE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7ED53D3E-2F65-D0A6-406D-CE2357ED5DE4" name="lj_Arheolog_Antikivtet_lj_Antikvitet_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>50B08D7D-AB52-5F53-18AF-E4D784B14002</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC684CB0-FB1F-47F6-66A6-36D7C7470580"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9FCAD0B-B4C7-D8E2-DBFE-98B8706E348A" name="lj_Arheolog_Antikivtet_lj_Arheolog_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>DBAA014B-3F9E-952E-F692-9B4927C468E6</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9335F3A0-EF3A-2594-D5CB-AD2EFB09DEE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1752AAFD-A30A-1F45-60DC-5D93FAF4F79F" name="lj_Lokacija">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>B17C8DDA-9F00-D77A-D0E3-6CE67226E2EC</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="4C92B38B-EF3B-B3F0-5B53-4CA658A00628">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>0E87CB65-C1D8-7762-C034-2A173CBE9137</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geografska_sirina" id="2BBAFF49-CB6B-5D7F-DFCD-00245193834C">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>4625D8DE-4036-4248-7F6C-055DF9B083C8</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="geografska_duzina" id="2EFD919C-0DA6-242C-743D-682E84375AC5">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>4F043F56-010D-5F22-F6E2-06E9CF3739BC</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>30</dataTypePrecision>
+<ownDataTypeParameters>,30,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tip_id" id="6712A6C9-D8E4-5D50-95FE-E51AA46BF5AD">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:56:01 UTC</createdTime>
+<generatorID>87332B12-1961-EFEF-C68A-86482CFF5074</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D47D2602-128F-AC7C-8AD5-DCB2443D79EE" referredColumn="E5235BD8-33F1-0059-E34D-7D074C13A653"/>
+</associations>
+</Column>
+<Column name="lj_grad_id" id="DF9C2A3B-65C2-60EF-F295-1B4CD787DCAF">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 15:00:35 UTC</createdTime>
+<generatorID>AD5BA5B1-C50B-B718-FE22-802971B83518</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9E92A2DD-7184-1B04-ECE1-E6AACDAB61E6" referredColumn="C3668245-FECC-37CA-AFD0-3F4943495124"/>
+</associations>
+</Column>
+<Column name="Naziv" id="AECB9E43-291A-5D5B-94BC-4649657B1C79">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 23:56:20 UTC</createdTime>
+<generatorID>2CEA028F-7CA2-E306-27EB-CB5C8C7C187C</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8F6D6346-E493-4327-C27C-FCC704A6E0BA" name="Lokacija_PK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>9543F8C0-71F1-AB0F-AE0B-43970DB3115D</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C92B38B-EF3B-B3F0-5B53-4CA658A00628"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5092D31-6974-F582-E601-6D939B9877FB" name="Lokacija_Tip_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:56:01 UTC</createdTime>
+<generatorID>9D9E5706-CE97-C193-0E49-6B648C0DEE79</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6712A6C9-D8E4-5D50-95FE-E51AA46BF5AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="36D8A3BF-2EBD-0499-09F9-33EB266B8D01" name="lj_Lokacija_lj_grad_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 15:00:35 UTC</createdTime>
+<generatorID>30DB83A6-0D97-5037-9605-2E37D07FE71E</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF9C2A3B-65C2-60EF-F295-1B4CD787DCAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

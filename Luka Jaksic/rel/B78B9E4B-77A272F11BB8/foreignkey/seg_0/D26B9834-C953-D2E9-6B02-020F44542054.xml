@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D26B9834-C953-D2E9-6B02-020F44542054" containerWithKeyObject="5102230D-0293-9CF0-8C35-C13830FD07AA" localFKIndex="B9FCAD0B-B4C7-D8E2-DBFE-98B8706E348A" name="lj_Arheolog_Antikivtet_lj_Arheolog_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>DBAA014B-3F9E-952E-F692-9B4927C468E6</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<referredTableLongName>lj_Arheolog</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DF36C48E-5191-B299-A086-E750701DD900</referredTableID>
+<keyObject>2983C593-D2A4-76BA-4E3D-0BBFC07CD9C9</keyObject>
+<referredKeyID>2983C593-D2A4-76BA-4E3D-0BBFC07CD9C9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

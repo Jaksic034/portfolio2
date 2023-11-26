@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C55E1B5-B0B7-DAD9-B23A-71E6B0D6C4DA" name="lj_Antikvitet">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:09 UTC</createdTime>
+<generatorID>320A06CE-757A-F74B-AF1D-8B33A3C8E30F</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="B19B64CF-D16B-C13E-46BD-FCD692789482">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:09 UTC</createdTime>
+<generatorID>08FF2F10-4D7D-7C75-DC1A-5A192DEEC574</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="datum_pronalaska" id="F797B653-8D5B-7146-B89D-CDCA8BC6479A">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:09 UTC</createdTime>
+<generatorID>683687F5-6BB2-36BB-C00D-292ED31F3FEE</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vreme_pronalaska" id="930E4D8F-78F0-6CF6-3BA8-C352245B2539">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:09 UTC</createdTime>
+<generatorID>F95785B1-20F2-01D4-F6A8-597CFD1411C1</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lj_Period_id" id="C4F9C611-F7E2-F958-13A1-A01A64303837">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:09 UTC</createdTime>
+<generatorID>43B84367-B871-3A43-750B-6E864D9728E6</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48916C67-596C-F03D-B198-7579B06413CA" referredColumn="C10CDBB8-797E-6364-21AC-F4636B36FC76"/>
+</associations>
+</Column>
+<Column name="Tip_Tip_ID" id="79694E46-8A44-3122-CE6F-5052D6BBC67D">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3433EF9F-6A76-1B57-F495-4EFA6220B52B" referredColumn="A6F27DED-ED90-4AE7-66ED-8E78E5709153"/>
+</associations>
+</Column>
+<Column name="ime" id="896CD677-FA4E-DA0E-C23C-197904B0CB96">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 23:56:20 UTC</createdTime>
+<generatorID>D01A6021-8993-D2E8-5A3F-389EEF2E7A04</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lj_Lokacija_id" id="B208FDB1-8BE1-301F-8880-372D5BF210D9">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 23:56:20 UTC</createdTime>
+<generatorID>C42C6D91-C1E3-787C-7117-9F2374B0835C</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB2D6D0F-B5FF-FBAB-BEE1-86A205B051CF" referredColumn="4C92B38B-EF3B-B3F0-5B53-4CA658A00628"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D891ECC9-7727-FB91-C893-2B1CEDB1A154" name="Antikvitet_PK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>E8D69F44-7139-ACFB-29C3-DBD8833E07F9</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B19B64CF-D16B-C13E-46BD-FCD692789482"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB36793A-68DF-DAF3-3D67-9EB006D3F351" name="Antikvitet_Tip_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>A0D85BFD-D172-93C6-6851-C79AF8E2C2E7</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79694E46-8A44-3122-CE6F-5052D6BBC67D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77366C67-273A-0F27-486D-D3AD19A4CBDC" name="lj_Antikvitet_lj_Period_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 14:48:10 UTC</createdTime>
+<generatorID>BB84782B-E046-AEB4-ADDD-C0FD2FE4DD68</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4F9C611-F7E2-F958-13A1-A01A64303837"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D08E237A-4980-36AC-84D8-F2236A3BB0C2" name="lj_Antikvitet_lj_Lokacija_FK">
+<createdBy>lukaj</createdBy>
+<createdTime>2023-11-25 23:56:20 UTC</createdTime>
+<generatorID>D4472066-A556-7700-088F-03C27A891395</generatorID>
+<ownerDesignName>Luka Jaksic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B208FDB1-8BE1-301F-8880-372D5BF210D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
