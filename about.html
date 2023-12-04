@@ -4,56 +4,332 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luka Jaksic - O meni</title>
+    <title>O meni</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:wght@300:400:500:600:&display=swap' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
         body {
-            background-color: #f8f9fa;
-            color: #495057;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+            background: linear-gradient(to right,rgb(7, 230, 185), #398888, rgb(142, 199, 186) );
+            color: black;
         }
-
-        .container {
-            margin-top: 50px;
+        .card{
+            width: 320px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            display: inline-block;
         }
-
-        .slika-container {
-            text-align: center;
-            margin-bottom: 20px;
+        .slide-container{
+            max-width: 1120px;
+            width: 100%;
+            padding: 40px 0;
         }
-
-        .slika {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
+        .slide-content{
+            margin: 0 40px;
+            overflow: hidden;
+            border-radius: 25px;
+        }
+        .card-image{
+            position: relative;
+            height: 150px;
+            width: 150px;
             border-radius: 50%;
-            margin-bottom: 10px;
+            background: aqua;
+            padding: 3px;
+        }
+        .card-image .card-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius:50%;
+            border: 4px solid #4070f4
+        }
+        .image-content,
+        .card-content{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px, 14px;
+        }
+        .image-content{
+            position: relative;
+            row-gap: 5px;
+            padding: 25px 0;
+        }
+        .overlay{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #398888;
+            border-radius: 25px 25px 0 25px;
+        }
+        .overlay::before, .overlay::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            height: 40px;
+            width: 40px;
+            background-color: #398888;
+        }
+        .overlay::after{
+            border-radius: 0 25px 0 0;
+            background-color: #FFF;
+        }
+        nav a {
+            color: white;
+        }
+        .name{
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+        }
+        .description{
+            font-size: 14px;
+            color: #707070;
+            text-align: center;
+        }
+        .button{
+            border: none;
+            font-size: 16px;
+            color: #FFF;
+            padding: 8px 16px;
+            background-color: #398888;
+            border-radius: 6px;
+            margin: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .button:hover{
+            background: #265DF2;
+        }
+        .swiper-navBatn{
+            color: #398888;
+            transition: color 0.3s ease;
+        }
+        .swiper-navBatn:hover{
+            color: #265DF2;
+        }
+        .swiper-navBatn::before,.swiper-navBatn::after{
+            font-size: 40px;
+        }
+        .swiper-button-prev{
+            left: 0px;
+        }
+        .swiper-button-next{
+            right: 0px;
+        }
+        @media screen and (max-width: 768px){
+            .slide-content{
+                margin: 0 10px;
+            }
+            .swiper-navBatn{
+                display: none;
+            }
+        }
+        #SearchBox{
+            width: 30%;
+            height: 50px;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        #input{
+            width: 80%;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            font-size: 20px;
+        }
+        #SearchBtn{
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            background-color: #398888;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #SearchBtn:hover{
+            background: #254747;
+        }
+        #ResetBtn{
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            background-color:  #254747;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #ResetBtn:hover{
+            background: #398888;
+        }
+        .content-container{
+         margin-top: 1rem;
+        }
+        mark{
+            background-color: #398888;
+        }
+        .mark1{
+            background-color: white;
         }
     </style>
 </head>
 
-<body>
-
-    <div class="container">
-        <h1 class="text-center">O Meni</h1>
-
-        <div class="slika-container">
-            <img src="OŠ-Vuk-Karadžić.jpg" alt="Slika 1" class="slika">
-            <p>Prvi red teksta o sebi. Opišite svoje kvalifikacije, iskustvo, ili bilo šta drugo što želite podeliti.</p>
-        </div>
-
-        <div class="slika-container">
-            <img src="pkg.png" alt="Slika 2" class="slika">
-            <p>Drugi red teksta o sebi. Možete dodati informacije o svom obrazovanju, hobijima, ili vašem profesionalnom putu.</p>
-        </div>
-
-        <div class="slika-container">
-            <img src="PMF-Kragujevac.png" alt="Slika 3" class="slika">
-            <p>Treći red teksta o sebi. Ovde možete podeliti svoje interese, veštine, ili bilo šta drugo što želite naglasiti.</p>
-        </div>
+<body >
+    <div class="col bg-dark " style="font-size: 20px; position: absolute; z-index: 3; top: 0;">
+        <nav>
+            <a href="Luka Jaksic.html" target="_self" class="col-md-12">Početna</a>
+            <a href="about.html" target="_self" class="col-md-12">O meni</a>
+            <a href="Usluge.html" target="_self" class="col-md-12">Usluge</a>
+            <a href="Kontakti.html" target="_self" class="col-md-12">Kontakt</a>
+        </nav>
     </div>
+    <div id="SearchBox" style="position: absolute; z-index: 3; top: 0; margin: 32px;">
+        <input type="text" id="input" placeholder="Search">
+        <button id="SearchBtn" class="btn">Search</button>
+        <button id="ResetBtn" class="btn" onclick="resetSearch()">Reset</button>
+    </div>
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="OŠ-Vuk-Karadžić.jpg" alt="Slika 1" class="card-image">
+                            </div>  
+                    </div>
+                    <div class="card-content content-container">
+                        <h2 class="name">Osnovna Skola</h2>
+                        <p class="description" id="p">Osnovnu skolu sam pohadjao u kragujevcu, Vuk Stefanovic Karadzic. Tu mi je razredni staresina bio Dragan Rakovic koji je predavao Tehnicko i Informaticko obrazovanje...</p>
+                        <button class="button">View more</button>
+                    </div>
+                </div><div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="pkg.png" alt="Slika 1" class="card-image">
+                            </div>  
+                    </div>
+                    <div class="card-content content-container">
+                        <h2 class="name">Srednja Skola</h2>
+                        <p class="description" id="pa">Srednju skolu sam pohadjao u Kragujevcu, Prva Kragujevacka Gimnazija, gde sam bio vrlodobar djak na specijalno informatickom smeru gde sam shvatio da me Psihologija interesuje vise nego racunarstvo...</p>
+                        <button class="button">View more</button>
+                    </div>
+                </div><div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="PMF-Kragujevac.png" alt="Slika 1" class="card-image">
+                            </div>  
+                    </div>
+                    <div class="card-content content-container">
+                        <h2 class="name">Fakultet</h2>
+                        <p class="description" id="par">Fakultet, i master, sam takodje zavrsio u Kragujevcu, Prirodno Matematicki fakultet. Studirajuci psihologiju sam upoznao mnogo divnih prijatelja koji su mi mnogo pomogli u daljem obrazovanju i biznisu...</p>
+                        <button class="button">View more</button>
+                    </div>
+                </div><div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="1700399028981.jpg" alt="Slika 1" class="card-image">
+                            </div>  
+                    </div>
+                    <div class="card-content content-container">
+                        <h2 class="name">Luka Jaksic</h2>
+                        <p class="description" id="para">Sada sam uspeni psiholog i psihoterapeut. Radim na istom mestu gde sam zavoleo ovu nauku, u Prvoj Kragujevackoj Gimnaziji, kao skolski psiholog i privatno kao psihoterapeut...</p>
+                        <button class="button">View more</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-navBatn"></div>
+        <div class="swiper-button-prev swiper-navBatn"></div>
+        <div class="swiper-pagination"></div>
+       </div>
 
+        
+    </div>
+</body>
+1
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        const p = document.getElementById("p");
+        const pa = document.getElementById("pa");
+        const par = document.getElementById("par");
+        const para = document.getElementById("para");
+        const SearchBtn = document.getElementById("SearchBtn");
+        SearchBtn.addEventListener("click", () => {
+            let input = document.getElementById("input").value;
+            
+            if(input !== ""){
+                let regExp = new RegExp(input, 'gi');
+                p.innerHTML = p.textContent.replace(regExp, "<mark>$&</mark>");
+                pa.innerHTML = pa.textContent.replace(regExp, "<mark>$&</mark>");
+                par.innerHTML = par.textContent.replace(regExp, "<mark>$&</mark>");
+                para.innerHTML = para.textContent.replace(regExp, "<mark>$&</mark>");
+            }
+        });
+        function resetSearch()
+        {
+            
+            const ResetBtn = document.getElementById("ResetBtn");
+            ResetBtn.addEventListener("click", () => {
+            let input = document.getElementById("input").value;
+            
+            if(input !== ""){
+                let regExp = new RegExp(input, 'gi');
+                p.innerHTML = p.textContent.replace(regExp, "<mark1>$&</mark1>");
+                pa.innerHTML = pa.textContent.replace(regExp, "<mark1>$&</mark1>");
+                par.innerHTML = par.textContent.replace(regExp, "<mark1>$&</mark1>");
+                para.innerHTML = para.textContent.replace(regExp, "<mark1>$&</mark1>");
+            }
+            const searchInput = document.getElementById('input');
+            searchInput.value = '';
+        });
+        }
+        var swiper = new Swiper(".slide-content", {
+        slidesPerView: 3,
+      spaceBetween: 50,
+      loop: true,
+      centerSlide: true,
+      fade: true,
+      gragCursor: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints:{
+        0:{
+            slidesPerView:1,
+        },
+        520:{
+            slidesPerView:2,
+        },
+        950:{
+            slidesPerView:3,
+        },
+      },
+    });
+    
+  </script>
+
 </html>
